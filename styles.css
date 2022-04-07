@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --Dark_cyan: hsl(185, 75%, 39%);
+  --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+  --Dark_grayish_blue: hsl(227, 10%, 46%);
+  --Dark_gray: hsl(0, 0%, 59%);
+  --font: "Kumbh Sans", sans-serif;
+  --size_name_stats: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--Dark_cyan);
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  /* Ask about the lines below  how to build it in a way that it doesn't have to be manually adjusted
+depending on the screen*/
+  background-position: -250px -500px, 750px 370px;
+  background-size: 978px 976px, 978px 976px;
+}
