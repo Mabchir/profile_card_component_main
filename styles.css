@@ -5,7 +5,7 @@
   --Dark_grayish_blue: hsl(227, 10%, 46%);
   --Dark_gray: hsl(0, 0%, 59%);
   --font: "Kumbh Sans", sans-serif;
-  --size_name_stats: 18px;
+  --size_name_stats: 1.125rem;
 }
 
 * {
@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   /* Ask about the lines below  how to build it in a way that it doesn't have to be manually adjusted
 depending on the screen*/
-  background-position: -250px -500px, 750px 370px;
+  background-position: -270px -500px, 750px 370px;
   background-size: 978px 976px, 978px 976px;
   display: flex;
   align-items: center;
@@ -34,19 +34,35 @@ depending on the screen*/
   background-color: white;
   border-radius: 15px;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
 }
-
-.heading img {
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  height: 185px;
+}
+.heading .decoration {
   border-radius: 15px 15px 0px 0px;
+  z-index: 2;
+  position: relative;
 }
 
 .victor {
   border-radius: 50px;
   border: 1px solid white;
+  width: 96px;
+  height: 96px;
+  z-index: 3;
+  position: relative;
+  top: -45px;
 }
 
 h1 {
   font-size: var(--size_name_stats);
+  margin-top: 24px;
 }
 
 h1 span {
@@ -55,17 +71,31 @@ h1 span {
 }
 
 h3 {
-  font-size: 13px;
+  font-size: 0.813rem;
   color: var(--Dark_grayish_blue);
   font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 25px;
 }
 
+hr {
+  opacity: 0.2;
+}
 .stats {
   display: flex;
   justify-content: space-evenly;
 }
 
 .stats p {
-  font-size: 10px;
+  font-size: 0.625rem;
   color: var(--Dark_gray);
+  margin-top: 9px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-position: -390px -350px, 170px 400px;
+    background-size: 622px 621px, 622px 621px;
+  }
 }
