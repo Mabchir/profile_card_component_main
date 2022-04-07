@@ -24,4 +24,48 @@ body {
 depending on the screen*/
   background-position: -250px -500px, 750px 370px;
   background-size: 978px 976px, 978px 976px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font);
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.heading img {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.victor {
+  border-radius: 50px;
+  border: 1px solid white;
+}
+
+h1 {
+  font-size: var(--size_name_stats);
+}
+
+h1 span {
+  color: var(--Dark_grayish_blue);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 13px;
+  color: var(--Dark_grayish_blue);
+  font-weight: 400;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats p {
+  font-size: 10px;
+  color: var(--Dark_gray);
 }
