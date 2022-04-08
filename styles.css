@@ -70,7 +70,7 @@ h1 span {
   font-weight: 400;
 }
 
-h3 {
+.location {
   font-size: 0.813rem;
   color: var(--Dark_grayish_blue);
   font-weight: 400;
