@@ -79,13 +79,16 @@ h3 {
 }
 
 hr {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 .stats {
   display: flex;
   justify-content: space-evenly;
 }
 
+.stats h1 {
+  text-transform: uppercase;
+}
 .stats p {
   font-size: 0.625rem;
   color: var(--Dark_gray);
